@@ -18,3 +18,22 @@ A web app for tracking expenses and budgets.
   * Back-end: [Flask](https://flask.palletsprojects.com)
   * Hosting: [Heroku](https://www.heroku.com)
 
+
+## To install and run Spendee Tracker App
+  
+  1. clone the repo:
+
+
+  2. Create your virtual environment:
+
+    python -m venv env
+
+
+  3.  Activate your virtual environemnt 
+
+
+
+  4.  install the packages in the following file:
+
+
+  5. 
