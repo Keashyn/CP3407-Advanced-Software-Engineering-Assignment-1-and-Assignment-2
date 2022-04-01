@@ -241,19 +241,19 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-### Pycharm ###
-.pycharm/*
-!.pycharm/settings.json
-!.pycharm/tasks.json
-!.pycharm/launch.json
-!.pycharm/extensions.json
+### Vscode ###
+.Vscode/*
+!.Vscode/settings.json
+!.Vscode/tasks.json
+!.VScode/launch.json
+!.Vscode/extensions.json
 
-### Pycharm Patch ###
+### VScode Patch ###
 # Ignore all local history of files
 .history
 
 # End of https://www.gitignore.io/api/flask,visualstudiocode
 
-# Tendie Tracker configs
+# Spendee Tracker configs
 config.py
 budget-test.db
