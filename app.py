@@ -22,11 +22,7 @@ from flask_wtf.csrf import CSRFProtect
 
 from helpers import apology, login_required, usd
 
-# App variable
-SECRET_KEY=someRandomStringOfText
 
-# DB variable
-DATABASE_URL=postgres://{user}:{password}@{hostname}:{port}/{database-name}
 
 # Configure application
 app = Flask(__name__)
