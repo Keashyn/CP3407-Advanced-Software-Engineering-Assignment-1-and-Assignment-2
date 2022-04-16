@@ -22,6 +22,12 @@ from flask_wtf.csrf import CSRFProtect
 
 from helpers import apology, login_required, usd
 
+# App variable
+SECRET_KEY=someRandomStringOfText
+
+# DB variable
+DATABASE_URL=SQLTOOLS//{keashynnaidoo}/{password}@{localhost}/{5432}/{postgres}
+
 
 
 # Configure application
@@ -54,7 +60,7 @@ app.jinja_env.filters["usd"] = usd
 csrf = CSRFProtect(app)
 
 # Create engine object to manage connections to DB, and scoped session to separate user interactions with DB
-engine = create_engine(os.getenv("postgres"))
+engine = create_engine(os.getenv("DATABASE_SQL"))
 db = scoped_session(sessionmaker(bind=engine))
 
 
