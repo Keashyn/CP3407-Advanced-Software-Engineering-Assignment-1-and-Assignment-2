@@ -26,8 +26,6 @@ from helpers import apology, login_required, usd
 SECRET_KEY=someRandomStringOfText
 
 # DB variable
-
-# DB variable
 DATABASE_URL=postgres://{user}:{password}@{hostname}:{port}/{database-name}
 
 # Configure application
