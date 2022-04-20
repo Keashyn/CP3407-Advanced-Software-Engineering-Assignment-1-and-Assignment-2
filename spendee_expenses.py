@@ -9,7 +9,7 @@ from datetime import datetime
 from helpers import convertSQLToDict
 
 # Create engine object to manage connections to DB, and scoped session to separate user interactions with DB
-engine = create_engine(os.getenv("DATABASE_URL"))
+engine = create_engine(os.getenv("postgresql+psycopg2://keashynnaidoo:password@localhost:5432/postgres"))
 db = scoped_session(sessionmaker(bind=engine))
 
 

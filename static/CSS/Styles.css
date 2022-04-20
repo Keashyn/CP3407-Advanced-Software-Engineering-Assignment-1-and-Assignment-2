@@ -6,13 +6,13 @@ nav .navbar-brand
 }
 
 /* colors for brand */
-nav .navbar-brand .orange
+nav .navbar-brand .green
 {
-    color: #ff9331;;
+    color: #31ff79;;
 }
 
 .navbar.bg-dark {
- background-color:#02B875 !important
+ background-color:#022db8 !important
 }
 
 main .form-control

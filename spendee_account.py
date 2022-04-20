@@ -8,7 +8,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from helpers import convertSQLToDict
 
 # Create engine object to manage connections to DB, and scoped session to separate user interactions with DB
-engine = create_engine(os.getenv("DATABASE_URL"))
+engine = create_engine(os.getenv("postgresql+psycopg2://keashynnaidoo:password@localhost:5432/postgres"))
 db = scoped_session(sessionmaker(bind=engine))
 
 
@@ -216,4 +216,4 @@ def getAllUserInfo(userID):
     # Get the users stats
     user["stats"] = getStatistics(userID)
 
-    return user 
+    return user
