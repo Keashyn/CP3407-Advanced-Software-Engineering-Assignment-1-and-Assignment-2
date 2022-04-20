@@ -1,4 +1,3 @@
-import os
 from sre_parse import CATEGORIES
 
 from flask import request, session
