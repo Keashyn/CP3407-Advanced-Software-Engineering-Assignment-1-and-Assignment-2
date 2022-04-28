@@ -1,4 +1,4 @@
-// SUMMARY: this file handles all of the functionality to view, update, or delete a users expense history on the 'Expense History' page of Spendee Tracker.
+// SUMMARY: this file handles all of the functionality to view, update, or delete a users expense history on the 'Expense History' page of Tendie Tracker.
 
 //Data Table
 $(document).ready(function () {

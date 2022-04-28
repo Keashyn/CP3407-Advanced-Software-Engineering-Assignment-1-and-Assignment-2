@@ -1,4 +1,4 @@
-// SUMMARY: this file handles all of the functionality on the 'Create Budget' and 'Update Budget' pages of Spendee Tracker.
+// SUMMARY: this file handles all of the functionality on the 'Create Budget' and 'Update Budget' pages of Tendie Tracker.
 
 /////////////////////////////////
 // Core Budget Functionality

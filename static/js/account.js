@@ -1,4 +1,4 @@
-// SUMMARY: this file handles all of the functionality on the 'Your Account' page of Spendee Tracker.
+// SUMMARY: this file handles all of the functionality on the 'Your Account' page of Tendie Tracker.
 
 ///////////////////////////////////////////////////////////////////////////////////////
 // Payer Collapseables (sets focus, clears input field, and collapses areas for UX)
