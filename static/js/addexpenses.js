@@ -1,4 +1,4 @@
-// SUMMARY: this file handles all of the functionality to add 1 or more expenses on the 'Add Expenses' page of Tendie Tracker.
+// SUMMARY: this file handles all of the functionality to add 1 or more expenses on the 'Add Expenses' page of Spendeee Tracker.
 
 // Non-Flask/Jinja vars
 var rowCount;

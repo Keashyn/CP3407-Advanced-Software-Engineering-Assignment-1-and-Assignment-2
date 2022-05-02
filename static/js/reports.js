@@ -1,4 +1,4 @@
-// SUMMARY: this file handles all of the functionality on the various Reporting pages of Tendie Tracker.
+// SUMMARY: this file handles all of the functionality on the various Reporting pages of Spendee Tracker.
 
 // Loads *budget report data* from Flask/Jinja that is passed from the request
 function loadBudgetData(budgetData) {

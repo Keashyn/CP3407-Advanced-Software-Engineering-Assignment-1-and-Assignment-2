@@ -41,7 +41,7 @@ Reports | Budgets Overview
     <div class="row">
         <div class="col">
             <div class="card bg-light mb-3" style="max-width: 25rem;">
-                <div class="card-header"><strong><a href="/updatebudget.html/budget['name'] }}">{{ budget["name"]
+                <div class="card-header"><strong><a href="/updatebudget/{{ budget['name'] }}">{{ budget["name"]
                             }}</a></strong></div>
                 <div class="card-body-dash">
                     {% set percent = ((budget["spent"] / budget["amount"]) * 100) %}

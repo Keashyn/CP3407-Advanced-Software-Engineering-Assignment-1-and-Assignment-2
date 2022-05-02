@@ -13,11 +13,10 @@ from helpers import convertSQLToDict
 engine = create_engine("postgresql+psycopg2://keashynnaidoo:password@localhost:5432/postgres", pool_pre_ping=True)
 db = scoped_session(sessionmaker(bind=engine))
 
-
 # Get the users budgets
 def getBudgets(userID):
     results = db.execute(
-        "SELECT id, name, amount FROM budgets WHERE user_id = :usersID ORDER BY name ASC", {"usersID": userID}).fetchall()
+        "SELECT id, name, year, amount FROM budgets WHERE user_id = :usersID ORDER BY name ASC", {"usersID": userID}).fetchall()
 
     budgets_query = convertSQLToDict(results)
 
@@ -38,7 +37,7 @@ def getBudgets(userID):
 # Get a users budget by the budget ID
 def getBudgetByID(budgetID, userID):
     results = db.execute(
-        "SELECT name, amount, id FROM budgets WHERE user_id = :usersID AND id = :budgetID", {"usersID": userID, "budgetID": budgetID}).fetchall()
+        "SELECT name, amount, year, id FROM budgets WHERE user_id = :usersID AND id = :budgetID", {"usersID": userID, "budgetID": budgetID}).fetchall()
 
     budget = convertSQLToDict(results)
 

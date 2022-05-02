@@ -7,7 +7,7 @@ Update Budget
 {% block main %}
 <h1>Update Budget</h1>
 <br>
-<form action="/updatebudget.html/{{ budget['name'] }}" id="updateBudgetForm" method="post" autocomplete="off">
+<form action="/updatebudget/{{ budget['name'] }}" id="updateBudgetForm" method="post" autocomplete="off">
     <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
     <div class="form-group">
         <label for="name" class="formLabels">Budget Name</label>

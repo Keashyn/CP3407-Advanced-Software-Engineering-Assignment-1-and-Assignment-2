@@ -20,7 +20,7 @@
     {% elif renamedPayer != None %}
       <div class="alert alert-dismissible alert-success">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Cya later {{ renamedPayer[0] }} 👋</strong> You renamed '<strong>{{ renamedPayer[0] }}</strong>' to '<strong>{{ renamedPayer[1] }}</strong>'.
+        <strong>See You later {{ renamedPayer[0] }} 👋</strong> You renamed '<strong>{{ renamedPayer[0] }}</strong>' to '<strong>{{ renamedPayer[1] }}</strong>'.
       </div>
     {% elif deletedPayer != None %}
       <div class="alert alert-dismissible alert-danger">
@@ -42,7 +42,7 @@
             <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseIncome" role="button" aria-expanded="false" aria-controls="collapseIncome">Update Income</a></p>
           </div>
           <div class="collapse" id="collapseIncome">
-              <form action="/templates/account.html" id="updateIncome" method="post" autocomplete="off">
+              <form action="/account" id="updateIncome" method="post" autocomplete="off">
                 <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
                 <div class="form-group">
                     <label class="col-form-label col-form-label-sm" for="income">Income Amount</label>
@@ -64,7 +64,7 @@
             {% endif %}
           </div>
           <div class="collapse" id="collapsePayer">
-              <form action="/account.html" id="addPayer" method="post" autocomplete="off">
+              <form action="/account" id="addPayer" method="post" autocomplete="off">
                 <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
                 <div class="form-group">
                     <label class="col-form-label col-form-label-sm" for="payerName">First Name</label>
@@ -102,7 +102,7 @@
             <p><a class="btn btn-primary" data-toggle="collapse" href="#collapsePassword" role="button" aria-expanded="false" aria-controls="collapsePassword">Change Password</a></p>
           </div>
           <div class="collapse" id="collapsePassword">
-              <form action="/account.html" id="updatePassword" method="post">
+              <form action="/account" id="updatePassword" method="post">
                 <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
                 <div class="form-group">
                     <input class="form-control validate-register" name="currentPassword" id="currentPassword" type="password" placeholder="Current password" required
@@ -146,7 +146,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="/account.html" id="renamePayer" method="post">
+            <form action="/account" id="renamePayer" method="post">
               <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
               <div class="form-group">
                 <label for="oldpayer" class="col-form-label">Old Payer:</label>
@@ -182,7 +182,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="/account.html" id="deletePayer" method="post">
+            <form action="/account" id="deletePayer" method="post">
               <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
               <div class="form-group">
                 <input type="hidden" class="form-control" name="delete" id="delete" value="" readonly>

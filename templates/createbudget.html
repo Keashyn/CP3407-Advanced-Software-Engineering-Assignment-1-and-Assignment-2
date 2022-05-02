@@ -15,7 +15,7 @@ Create Budget
     <p class="mb-0">All of your income is currently budgeted for. Good job 👍</p>
     </div>
     {% else %}
-    <form action="/templates/createbudget.html" id="createBudgetForm" method="post" autocomplete="off">
+    <form action="/createbudget" id="createBudgetForm" method="post" autocomplete="off">
         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
         <div class="form-group">
             <label for="name" class="formLabels">Budget Name</label>

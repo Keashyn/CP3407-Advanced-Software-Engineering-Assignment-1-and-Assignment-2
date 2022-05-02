@@ -238,7 +238,7 @@ def index():
         return render_template("expensed.html", results=expenses)
 
 
-@app.route("/expenses", methods=["GET","POST"])
+@app.route("/expenses", methods=["GET"])
 @login_required
 def expenses():
     """Manage expenses"""

@@ -34,7 +34,7 @@
             </p>
           </div>
           <div class="collapse" id="collapseCategory">
-              <form action="/templates/categories.html" id="createCategory" method="post" autocomplete="off">
+              <form action="/categories" id="createCategory" method="post" autocomplete="off">
                 <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
                 <div class="form-group">
                     <label class="col-form-label col-form-label-sm" for="name">Category Name</label>
@@ -126,7 +126,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="/templates/categories.html" id="deleteCategory" method="post">
+            <form action="/categories" id="deleteCategory" method="post">
               <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
               <div class="form-group">
                 <input type="hidden" class="form-control" name="delete" id="delete" value="" readonly>

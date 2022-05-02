@@ -26,7 +26,7 @@ Manage Budgets
         <h5 class="card-title">Create a new budget</h5>
         {% if (income - budgeted) > 0 %}
         <p>You currently have <strong>{{ (income - budgeted) | usd}}</strong> of unbudgeted income.</p>
-        <a href="/createbudget.html" class="btn btn-success">Create a Budget</a>
+        <a href="/createbudget" class="btn btn-success">Create a Budget</a>
         {% else %}
         <p>All of your income is budgeted for. Good job 👍</p>
         {% endif %}
@@ -46,7 +46,7 @@ Manage Budgets
             {{ budget["name"] }}
           </button>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="/updatebudget.html budget['name'] }}">Update</a>
+            <a class="dropdown-item" href="/updatebudget/{{ budget['name'] }}">Update</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteModal"
               data-budget="{{ budget['name'] }}" data-year="{{ budget['year'] }}"
@@ -76,7 +76,7 @@ Manage Budgets
         </button>
       </div>
       <div class="modal-body">
-        <form action="/budgets.html" id="deleteBudget" method="post">
+        <form action="/budgets" id="deleteBudget" method="post">
           <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
           <div class="form-group">
             <input type="hidden" class="form-control" name="delete" id="delete" value="" readonly>

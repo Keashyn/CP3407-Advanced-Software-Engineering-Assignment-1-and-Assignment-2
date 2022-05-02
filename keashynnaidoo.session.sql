@@ -12,6 +12,7 @@ CREATE TABLE budgets (
 	name	TEXT NOT NULL,
 	amount	REAL,
 	user_id	INTEGER NOT NULL,
+	year Real 
 	CONSTRAINT budgets_user_id_fkey FOREIGN KEY (user_id)
 		REFERENCES users (id) 
 		ON UPDATE NO ACTION ON DELETE NO ACTION

@@ -1,4 +1,4 @@
-// SUMMARY: this file handles all of the functionality on the 'Manage Spend Categories' page of Tendie Tracker.
+// SUMMARY: this file handles all of the functionality on the 'Manage Spend Categories' page of Spendee Tracker.
 
 // Set focus to new category name field when collapsed area is shown
 $('#collapseCategory').on('shown.bs.collapse', function () {
