@@ -52,7 +52,7 @@ Then the user can use this scheme file named keashynnaidoo.session.sql to create
 
 You will need this code to connect to the database:
 
-engine = create_engine =("postgres+psycopg2://{user}:{password}@{hostname}:{port}/{database-name}")
+engine = create_engine =("postgres+pysycopg2://{user}:{password}@{hostname}:{port}/{database-name}")
 
 User needs to replace these words in the above code with their computer details for localhost
 
