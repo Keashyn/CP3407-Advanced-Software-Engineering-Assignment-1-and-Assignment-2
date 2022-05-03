@@ -7,7 +7,7 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 from helpers import convertSQLToDict
 
 # Create engine object to manage connections to DB, and scoped session to separate user interactions with DB
-engine = create_engine("postgresql+psycopg2://keashynnaidoo:password@localhost:5432/postgres", pool_pre_ping=True)
+engine = create_engine("postgresql+psycopg2://keashynnaidoo:password@localhost:5432/postgres")
 db = scoped_session(sessionmaker(bind=engine))
 
 

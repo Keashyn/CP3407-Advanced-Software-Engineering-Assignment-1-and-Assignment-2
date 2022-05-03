@@ -55,7 +55,7 @@ app.jinja_env.filters["usd"] = usd
 csrf = CSRFProtect(app)
 
 # Create engine object to manage connections to DB, and scoped session to separate user interactions with DB
-engine = create_engine("postgresql+psycopg2://keashynnaidoo:password@localhost:5432/postgres", poolclass=NullPool)
+engine = create_engine("postgresql+psycopg2://keashynnaidoo:password@localhost:5432/postgres")
 db = scoped_session(sessionmaker(bind=engine))
 
 
