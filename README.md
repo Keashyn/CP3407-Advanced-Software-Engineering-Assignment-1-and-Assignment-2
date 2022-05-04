@@ -13,7 +13,7 @@ A web app for tracking expenses and mangining users spending habits.
 * Detailed reports that break down spending
 * Add additional payers for tracking expenses across multiple people
 * Export your data directly into raw, CSV, and Excel
-* Responsive design - compatible with all major browsers and devices
+* Responsive design - compatible with all major browsers 
 
 ## Built with
 
