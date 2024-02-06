@@ -24,7 +24,7 @@ A web app for tracking expenses and mangining users spending habits.
   
   1. Clone the repo:
 
-    git clone https://github.com/CP3407-Advanced-Software-Engineering/CP3407-Advanced-Software-Engineering-kangaroos-Assignmnet-1-and-Assignment-2-Expense-Tracker-App
+    git clone https://github.com/Keashyn/CP3407-Advanced-Software-Engineering-Assignment-1-and-Assignment-2
 
 
   2. Create your virtual environment:
