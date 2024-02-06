@@ -16,7 +16,7 @@ mccabe==0.6.1
 psycopg2==2.8.5
 pycodestyle==2.5.0
 pyflakes==2.1.1
-requests==2.23.0
+requests==2.31.0
 rope==0.16.0
 SQLAlchemy==1.3.16
 sqlparse==0.3.1
