@@ -19,7 +19,7 @@ pyflakes==2.1.1
 requests==2.31.0
 rope==0.16.0
 SQLAlchemy==1.3.16
-sqlparse==0.3.1
+sqlparse==0.4.4
 termcolor==1.1.0
 urllib3==1.25.9
 Werkzeug==0.16.1
